@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="messaggio_login">Sarai in grado di entrare nell\'isola?</string>
+    <string name="app_name">Costigiola 2.0</string>
+    <string name="benvenuto">benvenuto</string>
+    <string name="sq">Nome:</string>
+    <string name="codice">Cognome:</string>
+    <string name="reset">Reset</string>
+    <string name="entra">Entra nell\'isola</string>
+    <string name="foto">Complimenti, sei stato arruolato!!!!Troverai il tuo equipaggio in questo luogo:\n</string>
+    <string name="vuota"/>
+    <string name="Errore">NON PUOI ARRUOLARTI!</string>
+</resources>
