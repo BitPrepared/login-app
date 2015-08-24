@@ -35,8 +35,6 @@ public class CostigiolaSq extends Activity {
         } else if (sq.equals(Ragazzi.Rossi)) {
             img.setImageResource(R.drawable.rad3);
         } else if (sq.equals(Ragazzi.Verdi)) {
-            img.setImageResource(R.drawable.rad2);
-        } else if (sq.equals(Ragazzi.Gialli)) {
             img.setImageResource(R.drawable.rad4);
         }
         txt.setText("Sei stato arruolato dalla nave " + sq + ", recati in questo posto!");

@@ -43,7 +43,7 @@ public class LoginActivity extends Activity {
         ragazzi = new ArrayList<>();
 //	        riempiRagazzi();
 
-        // Sq femminile Phoenix
+// Sq femminile Phoenix
         ragazzi.add(new Ragazzi("nome", "cognome", Ragazzi.Rossi));
 
         btnLogin.setOnClickListener(new OnClickListener() {
