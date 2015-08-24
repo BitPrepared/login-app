@@ -1,9 +1,9 @@
 package it.bitprepared.loginapp;
 
 public class Ragazzi {
-    public static String Rossi = "Rossi";
-    public static String Bianchi = "Bianchi";
-    public static String Verdi = "Verdi";
+    public static String Rossi = "Phoenix";
+    public static String Bianchi = "Ikarus";
+    public static String Verdi = "Legacy";
     public static String Gialli = "Gialli";
 
     String nome;
@@ -19,6 +19,10 @@ public class Ragazzi {
     public Ragazzi(String nome, String cognome) {
         this.nome = nome;
         this.cognome = cognome;
+    }
+
+    public String getSq() {
+        return sq;
     }
 
     @Override
