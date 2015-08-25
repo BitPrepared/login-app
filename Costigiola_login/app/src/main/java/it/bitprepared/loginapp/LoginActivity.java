@@ -10,6 +10,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class LoginActivity extends Activity {
@@ -21,8 +27,6 @@ public class LoginActivity extends Activity {
     ImageView immagine;
     TextView txtMessaggio;
 
-//    int numeroRagazzi;
-//    int numeroSq;
     ArrayList<Ragazzi> ragazzi;
 
     /**
@@ -41,16 +45,14 @@ public class LoginActivity extends Activity {
         txtMessaggio = (TextView) this.findViewById(R.id.txtErrore);
 
         ragazzi = new ArrayList<>();
-//	        riempiRagazzi();
 
-// Sq femminile Phoenix
+        loadJsonRagazzi(LoginActivity.this, ragazzi);
         ragazzi.add(new Ragazzi("nome", "cognome", Ragazzi.Rossi));
 
         btnLogin.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 Ragazzi allievo = new Ragazzi(txtUserName.getText().toString().toLowerCase().trim(),
                         txtCognome.getText().toString().toLowerCase().trim());
                 int index = ragazzi.indexOf(allievo);
@@ -79,43 +81,39 @@ public class LoginActivity extends Activity {
 
     }
 
-    public void riempiRagazzi() {
-             /* ATTENZIONE:
-              * per aggiungere i ragazzi basta copiare e incollare la riga sottostante. Le sq sono:
-	 		 * Bianchi: Scimmia pazza
-	 		 * Rossi: Cetriolo di mare
-	 		 * Verdi: Vecchia signora
-	 		 * Gialli: Jolly rasta
-	 		 *
-	 		 * Che corrispondono ad ogni sq
-	 		 */
-        //Sq maschile Cetriolo di mare
-//	 		ragazzi.add(new Ragazzi("martino","mogna",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("antonio","gallusi",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("riccardo","sagramoni",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("filippo","falezza",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("federico","pellissero",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("cristiano","cavezzale",Ragazzi.Rossi));
-//	 		ragazzi.add(new Ragazzi("giovanni","casari",Ragazzi.Rossi));
-//
-//
-//	 		//Sq maschile Jolly rasta
-//	 		ragazzi.add(new Ragazzi("agnese","lena",Ragazzi.Gialli));
-//	 		ragazzi.add(new Ragazzi("emma","bonotti",Ragazzi.Gialli));
-//	 		ragazzi.add(new Ragazzi("chiara","santarelli",Ragazzi.Gialli));
-//	 		ragazzi.add(new Ragazzi("silvia","piccheri",Ragazzi.Gialli));
-//
-//	 		//Sq feminile vecchia signora
-////	 		ragazzi.add(new Ragazzi("sara","rissetto",Ragazzi.Verdi));
-////	 		ragazzi.add(new Ragazzi("giulia","scattolon",Ragazzi.Verdi));
-////	 		ragazzi.add(new Ragazzi("elizabeth","rota",Ragazzi.Verdi));
-////	 		ragazzi.add(new Ragazzi("francesca","dodici",Ragazzi.Verdi));
-////	 		ragazzi.add(new Ragazzi("arianna","casaroli",Ragazzi.Verdi));
-//
-//	 		//Sq feminile scimmia pazza
-//	 		ragazzi.add(new Ragazzi("assunta","pellegrino",Ragazzi.Bianchi));
-//	 		ragazzi.add(new Ragazzi("francesca","vannini",Ragazzi.Bianchi));
-//	 		ragazzi.add(new Ragazzi("martina","tiraboschi",Ragazzi.Bianchi));
-//	 		ragazzi.add(new Ragazzi("valentina","decuzzi",Ragazzi.Bianchi));
+    private void loadJsonRagazzi(LoginActivity loginActivity, ArrayList<Ragazzi> ragazzi) {
+
+        InputStream inputStream = getResources().openRawResource(R.raw.ragazzi);
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+        int ctr;
+        try {
+            ctr = inputStream.read();
+            while (ctr != -1) {
+                byteArrayOutputStream.write(ctr);
+                ctr = inputStream.read();
+            }
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            // Parse the data into jsonobject to get original data in form of json.
+            JSONObject jObject = new JSONObject(byteArrayOutputStream.toString());
+            JSONArray jObjectResult = jObject.getJSONArray("ragazzi");
+            String catName = "";
+            String catSurname = "";
+            String catSq = "";
+
+            for (int i = 0; i < jObjectResult.length(); i++) {
+                catName = jObjectResult.getJSONObject(i).getString("nome");
+                catSurname = jObjectResult.getJSONObject(i).getString("cognome");
+                catSq = jObjectResult.getJSONObject(i).getString("squadriglia");
+
+                ragazzi.add(new Ragazzi(catName, catSurname, catSq));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
