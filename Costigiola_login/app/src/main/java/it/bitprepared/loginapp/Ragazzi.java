@@ -46,12 +46,12 @@ public class Ragazzi {
         if (cognome == null) {
             if (other.cognome != null)
                 return false;
-        } else if (!cognome.equals(other.cognome))
+        } else if (!cognome.toLowerCase().replace(" ", "").equals(other.cognome.toLowerCase().replace(" ", "")))
             return false;
         if (nome == null) {
             if (other.nome != null)
                 return false;
-        } else if (!nome.equals(other.nome))
+        } else if (!nome.toLowerCase().replace(" ", "").equals(other.nome.toLowerCase().replace(" ", "")))
             return false;
         return true;
     }
