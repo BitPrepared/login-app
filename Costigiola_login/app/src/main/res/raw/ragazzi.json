@@ -1,9 +1,104 @@
 {
   "ragazzi": [
     {
-      "nome": "matteo",
-      "cognome": "rossi",
+      "nome": "francesca",
+      "cognome": "contardo",
       "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "sara",
+      "cognome": "cerretti",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "sofia",
+      "cognome": "barbetta",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "giulia",
+      "cognome": "chiosi",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "benedetta",
+      "cognome": "battistini",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "costanza",
+      "cognome": "castellani",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "chiara",
+      "cognome": "di primo",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "laura",
+      "cognome": "dal piva",
+      "squadriglia": "Phoenix"
+    },
+    {
+      "nome": "valentina",
+      "cognome": "cogo",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "elisa",
+      "cognome": "de felice",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "meswa",
+      "cognome": "feltrin",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "giulia",
+      "cognome": "giamberardini",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "agata",
+      "cognome": "bianconi",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "lucia",
+      "cognome": "vimini",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "chiara",
+      "cognome": "turrini",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "francesco",
+      "cognome": "grisorio",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "davide",
+      "cognome": "zanetti",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "andrea",
+      "cognome": "zorzato",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "riccardo",
+      "cognome": "gennari",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "simone",
+      "cognome": "pantalone",
+      "squadriglia": "Ikarus"
     }
   ]
 }
