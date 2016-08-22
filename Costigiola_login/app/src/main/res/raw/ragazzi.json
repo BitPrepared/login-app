@@ -1,103 +1,93 @@
 {
   "ragazzi": [
     {
-      "nome": "francesca",
-      "cognome": "contardo",
+      "nome": "adelaide",
+      "cognome": "iucci",
       "squadriglia": "Phoenix"
     },
     {
-      "nome": "sara",
-      "cognome": "cerretti",
+      "nome": "anna",
+      "cognome": "federico",
       "squadriglia": "Phoenix"
     },
     {
-      "nome": "sofia",
-      "cognome": "barbetta",
+      "nome": "gloria",
+      "cognome": "azzoni",
       "squadriglia": "Phoenix"
     },
     {
-      "nome": "giulia",
-      "cognome": "chiosi",
-      "squadriglia": "Phoenix"
-    },
-    {
-      "nome": "benedetta",
-      "cognome": "battistini",
-      "squadriglia": "Phoenix"
-    },
-    {
-      "nome": "costanza",
-      "cognome": "castellani",
+      "nome": "maria sofia",
+      "cognome": "silvestri",
       "squadriglia": "Phoenix"
     },
     {
       "nome": "chiara",
-      "cognome": "di primo",
+      "cognome": "garbin",
       "squadriglia": "Phoenix"
     },
     {
-      "nome": "laura",
-      "cognome": "dal piva",
-      "squadriglia": "Phoenix"
+      "nome": "chiara",
+      "cognome": "marcone",
+      "squadriglia": "Legacy"
     },
     {
-      "nome": "valentina",
-      "cognome": "cogo",
+      "nome": "pamela",
+      "cognome": "martinella",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "lalita",
+      "cognome": "cereghini",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "costanza",
+      "cognome": "nesti",
+      "squadriglia": "Legacy"
+    },
+    {
+      "nome": "emma",
+      "cognome": "decarli",
       "squadriglia": "Legacy"
     },
     {
       "nome": "elisa",
-      "cognome": "de felice",
+      "cognome": "cogliati",
       "squadriglia": "Legacy"
     },
     {
-      "nome": "meswa",
-      "cognome": "feltrin",
-      "squadriglia": "Legacy"
-    },
-    {
-      "nome": "giulia",
-      "cognome": "giamberardini",
-      "squadriglia": "Legacy"
-    },
-    {
-      "nome": "agata",
-      "cognome": "bianconi",
-      "squadriglia": "Legacy"
-    },
-    {
-      "nome": "lucia",
-      "cognome": "vimini",
-      "squadriglia": "Legacy"
-    },
-    {
-      "nome": "chiara",
-      "cognome": "turrini",
-      "squadriglia": "Legacy"
-    },
-    {
-      "nome": "francesco",
-      "cognome": "grisorio",
-      "squadriglia": "Ikarus"
-    },
-    {
-      "nome": "davide",
-      "cognome": "zanetti",
-      "squadriglia": "Ikarus"
-    },
-    {
-      "nome": "andrea",
-      "cognome": "zorzato",
-      "squadriglia": "Ikarus"
-    },
-    {
-      "nome": "riccardo",
-      "cognome": "gennari",
+      "nome": "samuele",
+      "cognome": "passaro",
       "squadriglia": "Ikarus"
     },
     {
       "nome": "simone",
-      "cognome": "pantalone",
+      "cognome": "nicol",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "matteo",
+      "cognome": "biasin",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "federico",
+      "cognome": "toso",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "emanuele",
+      "cognome": "ippoliti",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "mattia",
+      "cognome": "ciapanna",
+      "squadriglia": "Ikarus"
+    },
+    {
+      "nome": "valentino",
+      "cognome": "di tullio",
       "squadriglia": "Ikarus"
     }
   ]
