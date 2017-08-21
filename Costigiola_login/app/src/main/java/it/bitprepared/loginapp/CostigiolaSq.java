@@ -14,8 +14,8 @@ public class CostigiolaSq extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seconda);
-        img = (ImageView) this.findViewById(R.id.immagine);
-        txt = (TextView) this.findViewById(R.id.textView1);
+        img = this.findViewById(R.id.immagine);
+        txt = this.findViewById(R.id.textView1);
 
         if (savedInstanceState == null) {
             extras = getIntent().getExtras();
@@ -28,16 +28,18 @@ public class CostigiolaSq extends Activity {
             sq = (String) savedInstanceState.getSerializable("sq");
         }
 
+        if (sq == null){
+            return;
+        }
 
         if (sq.equals(Ragazzi.Bianchi)) {
             img.setImageResource(R.drawable.rad1);
-
         } else if (sq.equals(Ragazzi.Rossi)) {
             img.setImageResource(R.drawable.rad3);
         } else if (sq.equals(Ragazzi.Verdi)) {
             img.setImageResource(R.drawable.rad4);
         }
-        txt.setText("Sei stato arruolato dalla nave " + sq + ", recati in questo posto!");
+        txt.setText(getString(R.string.sei_stato_arrouolato, sq));
 
     }
 }

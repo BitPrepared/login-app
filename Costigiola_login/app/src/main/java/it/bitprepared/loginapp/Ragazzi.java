@@ -1,28 +1,24 @@
 package it.bitprepared.loginapp;
 
 public class Ragazzi {
-    public static String Rossi = "Phoenix";
-    public static String Bianchi = "Ikarus";
-    public static String Verdi = "Legacy";
-    public static String Gialli = "Gialli";
+    final static String Rossi = "Phoenix";
+    final static String Bianchi = "Ikarus";
+    final static String Verdi = "Legacy";
+//    static String Gialli = "Gialli";
 
-    String nome;
-    String cognome;
+    private final String nome;
+    private final String cognome;
     String sq;
 
-    public Ragazzi(String nome, String cognome, String sq) {
+    Ragazzi(String nome, String cognome, String sq) {
         this.nome = nome;
         this.cognome = cognome;
         this.sq = sq;
     }
 
-    public Ragazzi(String nome, String cognome) {
+    Ragazzi(String nome, String cognome) {
         this.nome = nome;
         this.cognome = cognome;
-    }
-
-    public String getSq() {
-        return sq;
     }
 
     @Override

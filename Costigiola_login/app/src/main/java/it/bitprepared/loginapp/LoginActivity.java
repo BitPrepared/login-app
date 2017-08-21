@@ -29,24 +29,21 @@ public class LoginActivity extends Activity {
 
     ArrayList<Ragazzi> ragazzi;
 
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        txtUserName = (EditText) this.findViewById(R.id.txtUname);
-        txtCognome = (EditText) this.findViewById(R.id.txtPwd);
-        btnLogin = (Button) this.findViewById(R.id.btnLogin);
-        btnCancel = (Button) this.findViewById(R.id.btnCancel);
-        immagine = (ImageView) this.findViewById(R.id.immagine);
-        txtMessaggio = (TextView) this.findViewById(R.id.txtErrore);
+        txtUserName = this.findViewById(R.id.txtUname);
+        txtCognome = this.findViewById(R.id.txtPwd);
+        btnLogin = this.findViewById(R.id.btnLogin);
+        btnCancel = this.findViewById(R.id.btnCancel);
+        immagine = this.findViewById(R.id.immagine);
+        txtMessaggio = this.findViewById(R.id.txtErrore);
 
         ragazzi = new ArrayList<>();
 
-        loadJsonRagazzi(LoginActivity.this, ragazzi);
+        loadJsonRagazzi(ragazzi);
         ragazzi.add(new Ragazzi("nome", "cognome", Ragazzi.Rossi));
 
         btnLogin.setOnClickListener(new OnClickListener() {
@@ -63,25 +60,24 @@ public class LoginActivity extends Activity {
                     intent.putExtra("sq", allievo.sq);
                     startActivity(intent);
                 } else {
-                    txtMessaggio.setText(R.string.Errore);
+                    txtMessaggio.setText(R.string.errore);
                 }
 
             }
         });
 
         btnCancel.setOnClickListener(new OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                txtUserName.setText(R.string.vuota);
-                txtCognome.setText(R.string.vuota);
-                txtMessaggio.setText(R.string.vuota);
+                txtUserName.setText("");
+                txtCognome.setText("");
+                txtMessaggio.setText("");
             }
         });
 
     }
 
-    private void loadJsonRagazzi(LoginActivity loginActivity, ArrayList<Ragazzi> ragazzi) {
+    private void loadJsonRagazzi(ArrayList<Ragazzi> ragazzi) {
 
         InputStream inputStream = getResources().openRawResource(R.raw.ragazzi);
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -101,15 +97,14 @@ public class LoginActivity extends Activity {
             // Parse the data into jsonobject to get original data in form of json.
             JSONObject jObject = new JSONObject(byteArrayOutputStream.toString());
             JSONArray jObjectResult = jObject.getJSONArray("ragazzi");
-            String catName = "";
-            String catSurname = "";
-            String catSq = "";
+            String catName;
+            String catSurname;
+            String catSq;
 
             for (int i = 0; i < jObjectResult.length(); i++) {
                 catName = jObjectResult.getJSONObject(i).getString("nome");
                 catSurname = jObjectResult.getJSONObject(i).getString("cognome");
                 catSq = jObjectResult.getJSONObject(i).getString("squadriglia");
-
                 ragazzi.add(new Ragazzi(catName, catSurname, catSq));
             }
         } catch (Exception e) {
