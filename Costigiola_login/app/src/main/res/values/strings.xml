@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Tema Monkey Island -->
 <!--    <string name="messaggio_login">Sarai in grado di entrare nell\'isola?</string>
     <string name="app_name">Costigiola 2.0</string>
     <string name="benvenuto">benvenuto</string>
@@ -12,6 +13,7 @@
     <string name="Errore">NON PUOI ARRUOLARTI!</string>-->
 
     <!-- Tema Matrix -->
+<!--
     <string name="app_name">Costigiola 2.0</string>
     <string name="benvenuto">benvenuto</string>
     <string name="sq">Nome:</string>
@@ -22,5 +24,18 @@
     <string name="foto">Complimenti, sei stato arruolato!!!!Troverai il tuo equipaggio in questo luogo:\n</string>
     <string name="errore">Non puoi arruolarti!</string>
     <string name="sei_stato_arrouolato">Sei stato arruolato dalla nave %s, recati in questo posto!"</string>
+-->
+
+    <!-- Tema Star Wars -->
+    <string name="app_name">Costigiola 3.0</string>
+    <string name="benvenuto">Benvenuto</string>
+    <string name="sq">Nome:</string>
+    <string name="codice">Cognome:</string>
+    <string name="reset">Reset</string>
+    <string name="messaggio_login">Sarai in grado di diventare un Jedi?</string>
+    <string name="entra">Prova la tua forza</string>
+    <string name="foto">Complimenti, sei stato arruolato!!! Troverai i tuoi compagni in questo luogo:\n</string>
+    <string name="errore">Non puoi arruolarti!</string>
+    <string name="sei_stato_arrouolato">Sei stato arruolato dai %s, recati in questo posto!"</string>
 
 </resources>
