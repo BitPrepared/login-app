@@ -7,6 +7,8 @@ android {
         applicationId "it.bitprepared.loginapp"
         minSdkVersion 15
         targetSdkVersion 28
+        versionCode 3
+        versionName "3.0"
     }
 
     buildTypes {
@@ -14,5 +16,16 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+
+    dependencies {
+        implementation Libs.kotlinJdk
+        implementation Libs.androidXAppCompat
+        implementation Libs.androidXRecyclerView
+        implementation Libs.androidXConstraintLayout
+        implementation Libs.materialComponents
+
+        implementation Libs.rxjava2
+        implementation Libs.rxAndroid2
     }
 }

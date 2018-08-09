@@ -1,11 +1,12 @@
 package it.bitprepared.loginapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CostigiolaSq extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class CostigiolaSq extends AppCompatActivity {
     ImageView img;
     String sq;
     TextView txt;
