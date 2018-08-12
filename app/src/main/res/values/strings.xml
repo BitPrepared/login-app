@@ -4,7 +4,7 @@
 <!--    <string name="messaggio_login">Sarai in grado di entrare nell\'isola?</string>
     <string name="app_name">Costigiola 2.0</string>
     <string name="benvenuto">benvenuto</string>
-    <string name="sq">Nome:</string>
+    <string name="resultSq">Nome:</string>
     <string name="codice">Cognome:</string>
     <string name="reset">Reset</string>
     <string name="entra">Entra nell\'isola</string>
@@ -16,7 +16,7 @@
 <!--
     <string name="app_name">Costigiola 2.0</string>
     <string name="benvenuto">benvenuto</string>
-    <string name="sq">Nome:</string>
+    <string name="resultSq">Nome:</string>
     <string name="codice">Cognome:</string>
     <string name="reset">Reset</string>
     <string name="messaggio_login">Sarai in grado di entrare in Matrix?</string>
@@ -28,14 +28,15 @@
 
     <!-- Tema Star Wars -->
     <string name="app_name">Costigiola 3.0</string>
-    <string name="benvenuto">Benvenuto</string>
-    <string name="sq">Nome:</string>
-    <string name="codice">Cognome:</string>
+    <string name="welcome">Benvenuto</string>
+    <string name="name">Nome</string>
+    <string name="surname">Cognome</string>
     <string name="reset">Reset</string>
-    <string name="messaggio_login">Sarai in grado di diventare un Jedi?</string>
-    <string name="entra">Prova la tua forza</string>
-    <string name="foto">Complimenti, sei stato arruolato!!! Troverai i tuoi compagni in questo luogo:\n</string>
-    <string name="errore">Non puoi arruolarti!</string>
-    <string name="sei_stato_arrouolato">Sei stato arruolato dai %s, recati in questo posto!"</string>
+    <string name="test_message">Sarai in grado di diventare un Jedi?</string>
+    <string name="test_your_force">Prova la tua forza</string>
+    <string name="picture">Complimenti, sei stato arruolato!!! Troverai i tuoi compagni in questo luogo:\n</string>
+    <string name="error">Non puoi arruolarti!</string>
+    <string name="you_have_been_selected">Sei stato arruolato dai:</string>
+    <string name="go_there">Recati in questo posto!"</string>
 
 </resources>

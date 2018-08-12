@@ -1,2 +1,2 @@
 # login-app
-App Android utilizzata per effettuare il "Login" dei ragazzi al campo
+App Android utilizzata per effettuare il "Login" dei scout al campo
