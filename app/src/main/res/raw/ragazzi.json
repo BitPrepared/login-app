@@ -1,94 +1,119 @@
 {
   "ragazzi": [
     {
-      "nome": "adelaidé",
-      "cognome": "iucci",
-      "squadriglia": "Phoenix"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Blu"
     },
     {
-      "nome": "anna",
-      "cognome": "federico",
-      "squadriglia": "Phoenix"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Blu"
     },
     {
-      "nome": "gloria",
-      "cognome": "azzoni",
-      "squadriglia": "Phoenix"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Blu"
     },
     {
-      "nome": "maria sofia",
-      "cognome": "silvestri",
-      "squadriglia": "Phoenix"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Blu"
     },
     {
-      "nome": "chiara",
-      "cognome": "garbin",
-      "squadriglia": "Phoenix"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Blu"
     },
     {
-      "nome": "chiara",
-      "cognome": "marcone",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Rosso"
     },
     {
-      "nome": "pamela",
-      "cognome": "martinella",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Rosso"
     },
     {
-      "nome": "lalita",
-      "cognome": "cereghini",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Rosso"
     },
     {
-      "nome": "costanza",
-      "cognome": "nesti",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Rosso"
     },
     {
-      "nome": "emma",
-      "cognome": "decarli",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Rosso"
     },
     {
-      "nome": "elisa",
-      "cognome": "cogliati",
-      "squadriglia": "Legacy"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "samuele",
-      "cognome": "passaro",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "simone",
-      "cognome": "nicol",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "matteo",
-      "cognome": "biasin",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
     },
     {
-      "nome": "federico",
-      "cognome": "toso",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "emanuele",
-      "cognome": "ippoliti",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "mattia",
-      "cognome": "ciapanna",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
     },
     {
-      "nome": "valentino",
-      "cognome": "di tullio",
-      "squadriglia": "Ikarus"
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Oro"
+    },
+    {
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
+    },
+    {
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
+    },
+    {
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
+    },
+    {
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
+    },
+    {
+      "nome": "Luke",
+      "cognome": "Skywalker",
+      "squadriglia": "Arancio"
     }
   ]
 }
