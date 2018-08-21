@@ -23,7 +23,8 @@ class ResultActivity : AppCompatActivity() {
         if (resultSq == null) return
 
         when (resultSq) {
-            WHITE -> result_image.setImageResource(R.drawable.rad1)
+            WHITE -> result_image.setImageResource(R.drawable.rad2)
+            YELLOW -> result_image.setImageResource(R.drawable.rad5)
             RED -> result_image.setImageResource(R.drawable.rad3)
             GREEN -> result_image.setImageResource(R.drawable.rad4)
         }
