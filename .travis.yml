@@ -16,6 +16,7 @@ android:
     - tools
     - platform-tools
     - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+    - build-tools-27.0.3
     - android-$ANDROID_API_LEVEL
     - extra-android-support
     - extra-android-m2repository
