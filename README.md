@@ -1,6 +1,11 @@
 # login-app
 [![CircleCI](https://circleci.com/gh/BitPrepared/login-app.svg?style=svg)](https://circleci.com/gh/BitPrepared/login-app)
 
+<p align="center">
+    <img src="app/src/main/ic_launcher-web.png" width="200px" />
+</p>
+
+
 App used to the the _physical_ login of the boy-scouts at the [bitprepared.it](http://bitprepared.it/) scout camp.
 
 To create new login:
