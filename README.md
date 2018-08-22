@@ -2,7 +2,7 @@
 [![CircleCI](https://circleci.com/gh/BitPrepared/login-app.svg?style=svg)](https://circleci.com/gh/BitPrepared/login-app)
 
 <p align="center">
-    <img src="app/src/main/ic_launcher-web.png" width="200px" />
+    <img src="app/src/main/ic_launcher-web.png" width="400px" />
 </p>
 
 
