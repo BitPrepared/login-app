@@ -3,7 +3,7 @@ object Versions {
     const val androidx = "28.0.0-rc01"
     const val constraintlayout = "1.1.2"
     const val junit = "4.12"
-    const val kotlin = "1.2.60"
+    const val kotlin = "1.3.31"
     const val materialcomponents = "1.0.0-rc01"
     const val mockito = "2.21.0"
     const val mockitoKotlin = "2.0.0-RC1"
