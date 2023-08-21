@@ -27,10 +27,10 @@ class ResultActivity : AppCompatActivity() {
         val resultSqTextView = findViewById<TextView>(R.id.result_sq)
 
         when (resultSq) {
-            WHITE -> resultImageView.setImageResource(R.drawable.rad1)
-            YELLOW -> resultImageView.setImageResource(R.drawable.rad2)
-            RED -> resultImageView.setImageResource(R.drawable.rad3)
-            GREEN -> resultImageView.setImageResource(R.drawable.rad4)
+            RED -> resultImageView.setImageResource(R.drawable.rad1)
+            GOLD -> resultImageView.setImageResource(R.drawable.rad3)
+            BLUE -> resultImageView.setImageResource(R.drawable.rad2)
+            ORANGE -> resultImageView.setImageResource(R.drawable.rad4)
         }
         resultSqTextView.text = resultSq
     }
