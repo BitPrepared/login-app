@@ -1,9 +1,9 @@
 package it.bitprepared.loginapp
 
-const val RED = "Rosso"
-const val BLUE = "Blu"
-const val ORANGE = "Arancio"
-const val GOLD = "Oro"
+const val RED = "rosso"
+const val BLUE = "blu"
+const val ORANGE = "arancio"
+const val GOLD = "oro"
 
 data class Scout(var name: String, var surname: String, var sq: String) {
     constructor(name: String, surname: String) : this(name, surname, RED)
