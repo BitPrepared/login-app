@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_start.*
 import org.json.JSONObject
 import java.io.ByteArrayOutputStream
 import java.io.IOException
@@ -14,14 +16,18 @@ import java.io.IOException
 class StartActivity : AppCompatActivity() {
 
     private val scoutList: MutableList<Scout> = mutableListOf()
+    private lateinit var buttonLogin: Button
+    private lateinit var editName: EditText
+    private lateinit var editSurname: EditText
+    private lateinit var errorMessage: ViewGroup
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.start_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == R.id.menu_reset) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.menu_reset) {
             resetInputForm()
         }
         return super.onOptionsItemSelected(item)
@@ -30,12 +36,17 @@ class StartActivity : AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
+        buttonLogin = findViewById(R.id.button_login)
+        editName = findViewById(R.id.edit_name)
+        editSurname = findViewById(R.id.edit_surname)
+        errorMessage = findViewById(R.id.error_message)
+
         scoutList.addAll(loadJsonFile())
 
-        button_login.setOnClickListener { _ ->
+        buttonLogin.setOnClickListener { _ ->
             // Check if name/surname are inside the JSON File
             val result = scoutList.firstOrNull {
-                it.isTheSamePerson(edit_name.text.toString(), edit_surname.text.toString())
+                it.isTheSamePerson(editName.text.toString(), editSurname.text.toString())
             }
             if (result == null) {
                 showErrorMessage()
@@ -46,7 +57,7 @@ class StartActivity : AppCompatActivity() {
     }
 
     private fun showErrorMessage() {
-        error_message.visibility = View.VISIBLE
+        errorMessage.visibility = View.VISIBLE
     }
 
     private fun openResultActivity(value: String) {
@@ -56,9 +67,9 @@ class StartActivity : AppCompatActivity() {
     }
 
     private fun resetInputForm() {
-        edit_name.setText("")
-        edit_surname.setText("")
-        error_message.visibility = View.GONE
+        editName.setText("")
+        editSurname.setText("")
+        errorMessage.visibility = View.GONE
     }
 
     private fun loadJsonFile(): List<Scout> {

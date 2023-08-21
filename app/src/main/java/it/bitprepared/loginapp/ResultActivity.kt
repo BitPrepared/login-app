@@ -1,8 +1,9 @@
 package it.bitprepared.loginapp
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_result.*
 
 const val KEY_RESULT_SQ = "result_sq"
 
@@ -15,19 +16,22 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         resultSq = if (savedInstanceState == null) {
-            intent.extras.getString(KEY_RESULT_SQ)
+            intent.extras?.getString(KEY_RESULT_SQ)
         } else {
             savedInstanceState.getSerializable(KEY_RESULT_SQ) as String
         }
 
         if (resultSq == null) return
 
+        val resultImageView = findViewById<ImageView>(R.id.result_image)
+        val resultSqTextView = findViewById<TextView>(R.id.result_sq)
+
         when (resultSq) {
-            WHITE -> result_image.setImageResource(R.drawable.rad2)
-            YELLOW -> result_image.setImageResource(R.drawable.rad5)
-            RED -> result_image.setImageResource(R.drawable.rad3)
-            GREEN -> result_image.setImageResource(R.drawable.rad4)
+            WHITE -> resultImageView.setImageResource(R.drawable.rad1)
+            YELLOW -> resultImageView.setImageResource(R.drawable.rad2)
+            RED -> resultImageView.setImageResource(R.drawable.rad3)
+            GREEN -> resultImageView.setImageResource(R.drawable.rad4)
         }
-        result_sq.text = resultSq
+        resultSqTextView.text = resultSq
     }
 }

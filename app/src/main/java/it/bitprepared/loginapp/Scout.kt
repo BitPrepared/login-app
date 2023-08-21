@@ -9,10 +9,10 @@ data class Scout(var name: String, var surname: String, var sq: String) {
     constructor(name: String, surname: String) : this(name, surname, RED)
 
     fun isTheSamePerson(otherName: String, otherSurname: String): Boolean {
-        if (surname.ignoreAccents().toLowerCase().trim()
-                != otherSurname.ignoreAccents().toLowerCase().trim()) return false
-        if (name.ignoreAccents().toLowerCase().trim()
-                != otherName.ignoreAccents().toLowerCase().trim()) return false
+        if (surname.ignoreAccents().lowercase().trim()
+                != otherSurname.ignoreAccents().lowercase().trim()) return false
+        if (name.ignoreAccents().lowercase().trim()
+                != otherName.ignoreAccents().lowercase().trim()) return false
         return true
     }
 }
