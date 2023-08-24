@@ -1,4 +1,4 @@
 plugins {
-    id("com.android.application") version "8.1.1" apply false
-    kotlin("android") version "1.9.0" apply false
+    alias(libs.plugins.application) apply false
+    alias(libs.plugins.kotlin) apply false
 }

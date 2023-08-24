@@ -1,8 +1,8 @@
 [versions]
-agp = "8.1.0"
+agp = "8.1.1"
 appcompat = "1.6.1"
 constraintlayout = "2.1.4"
-kotlin = "1.9.0"
+kotlin = "1.9.10"
 mdc = "1.9.0"
 multidex = "2.0.1"
 recyclerview = "1.3.1"
@@ -19,4 +19,5 @@ rxandroid = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rxandroi
 rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
 
 [plugins]
-versions = { id = "com.android.application", version.ref = "agp" }
+application = { id = "com.android.application", version.ref = "agp" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
