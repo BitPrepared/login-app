@@ -9,10 +9,10 @@ android {
 
     defaultConfig {
         applicationId = "it.bitprepared.loginapp"
-        minSdk = 15
+        minSdk = 19
         targetSdk = 34
-        versionCode = 4
-        versionName = "4.0"
+        versionCode = 5
+        versionName = "5.0"
         multiDexEnabled = true
     }
 
