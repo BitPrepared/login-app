@@ -2,5 +2,16 @@
   "extends": [
     "config:base",
     ":automergeMinor"
+  ],
+  "packageRules": [
+    {
+      "description": "Exclude Gradle dependencies that can't be updated due to minSdkVersion limits",
+      "matchManagers": [
+        "gradle"
+      ],
+      "ignoreDeps": [
+        "androidx.appcompat:appcompat"
+      ]
+    }
   ]
 }
