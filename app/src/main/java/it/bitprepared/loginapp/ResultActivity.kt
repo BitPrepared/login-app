@@ -1,5 +1,6 @@
 package it.bitprepared.loginapp
 
+import android.os.Build
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -17,7 +18,10 @@ class ResultActivity : AppCompatActivity() {
 
         resultSq = if (savedInstanceState == null) {
             intent.extras?.getString(KEY_RESULT_SQ)
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            savedInstanceState.getSerializable(KEY_RESULT_SQ, String::class.java)
         } else {
+            @Suppress("DEPRECATION")
             savedInstanceState.getSerializable(KEY_RESULT_SQ) as String
         }
 
