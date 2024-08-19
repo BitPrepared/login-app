@@ -31,10 +31,10 @@ class ResultActivity : AppCompatActivity() {
         val resultSqTextView = findViewById<TextView>(R.id.result_sq)
 
         when {
-            resultSq.equals(RED, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.rad1)
-            resultSq.equals(GOLD, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.rad3)
-            resultSq.equals(BLUE, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.rad2)
-            resultSq.equals(ORANGE, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.rad4)
+            resultSq.equals(RED, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.red)
+            resultSq.equals(GOLD, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.gold)
+            resultSq.equals(BLUE, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.blue)
+            resultSq.equals(ORANGE, ignoreCase = true) -> resultImageView.setImageResource(R.drawable.orange)
         }
         resultSqTextView.text = resultSq
     }
