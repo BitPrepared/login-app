@@ -11,8 +11,8 @@ android {
         applicationId = "it.bitprepared.loginapp"
         minSdk = 19
         targetSdk = 34
-        versionCode = 5
-        versionName = "5.0"
+        versionCode = 6
+        versionName = "5.1"
         multiDexEnabled = true
     }
 
