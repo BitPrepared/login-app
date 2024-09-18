@@ -1,5 +1,5 @@
 [versions]
-agp = "8.6.0"
+agp = "8.6.1"
 #noinspection GradleDependency
 appcompat = "1.6.1"
 constraintlayout = "2.1.4"
