@@ -6,7 +6,6 @@ const val ORANGE = "arancio"
 const val GOLD = "oro"
 
 data class Scout(var name: String, var surname: String, var sq: String) {
-    constructor(name: String, surname: String) : this(name, surname, RED)
 
     fun isTheSamePerson(otherName: String, otherSurname: String): Boolean {
         if (surname.ignoreAccents().lowercase().trim()
