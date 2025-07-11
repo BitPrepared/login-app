@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 36
     namespace = "it.bitprepared.loginapp"
 
     defaultConfig {
         applicationId = "it.bitprepared.loginapp"
         minSdk = 19
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 7
-        versionName = "5.2"
+        versionName = "6.0"
         multiDexEnabled = true
     }
 
