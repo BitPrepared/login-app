@@ -10,7 +10,9 @@
         "gradle"
       ],
       "ignoreDeps": [
-        "androidx.appcompat:appcompat"
+        "androidx.appcompat:appcompat",
+        "androidx.constraintlayout:constraintlayout",
+        "androidx.recyclerview:recyclerview"
       ]
     }
   ]
