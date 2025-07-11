@@ -28,8 +28,6 @@ android {
         implementation(libs.androidx.recyclerview)
         implementation(libs.androidx.constraintlayout)
         implementation(libs.mdc)
-        implementation(libs.rxjava)
-        implementation(libs.rxandroid)
     }
 }
 
